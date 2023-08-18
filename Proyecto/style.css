@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Oswald&family=The+Nautigal:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: lora;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: white;
+  display: inline-block;
+}
+body {
+  background-image: url(./img/cuero.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.productos_destacados {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+}
+.productos_destacados img {
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.destacado1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destacada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  width: 60%;
+}
+
+li {
+  display: inline-block;
+}
+
+footer {
+  background-color: azure;
+}
+
+.logo {
+  padding: 4rem;
+  background-color: aliceblue;
+  display: block;
+  width: 15%;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: rgba(90, 57, 7, 0.514);
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  padding: 3rem;
+}
+.navbar li:hover {
+  border-bottom: 1px solid;
+  background: #6b3e03b0;
+}
+
+.cart1 {
+  display: flex;
+  justify-content: end;
+}
+.cart {
+  width: 30%;
+  background-color: rgb(196, 133, 39, 0.1);
+}
+
+.productos_descuento {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+}
+.productos_descuento img {
+  max-width: 500px;
+  padding: 2rem;
+}
+
+@media (max-width: 992px) {
+  .productos_descuento {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .productos_destacados {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
