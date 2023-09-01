@@ -1,0 +1,14 @@
+@media (max-width: 992px) {
+  .productos_descuento {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .productos_destacados {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
